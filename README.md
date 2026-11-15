@@ -1,5 +1,5 @@
 # 🎓 Campus Companion
-### An Interactive Student Productivity and Academic Management System
+### An Integrated Student Academic and Productivity Management System
 
 Campus Companion is a desktop-based student productivity application developed using **Python and Tkinter**. It provides a centralized platform for students to organize their academic activities, manage daily tasks, monitor attendance, calculate academic performance, and maintain their student profiles.
 
@@ -18,34 +18,33 @@ The application features a modern dark-themed graphical user interface designed 
 - Shows the timetable for the current day.
 
 ### 2. Timetable Management
-- Add new classes to the weekly timetable.
-- Update existing class details.
-- Delete scheduled classes.
-- Store subject names, days, timings, and classroom details.
+- Add, update and delete classes.
+- Organize classes by day and time.
+- Store subject names, timings and classroom details.
 
 ### 3. Task Manager
 - Add academic tasks and assignments.
 - Set deadlines and priorities.
 - Update and delete tasks.
 - Mark tasks as completed.
-- Filter tasks by All, Pending, and Completed status.
+- Filter tasks by All, Pending and Completed status.
 
 ### 4. Attendance Tracker
 - Add and manage subjects.
 - Record total classes and attended classes.
 - Automatically calculate attendance percentages.
 - Identify subjects below the 75% attendance threshold.
-- Calculate the number of additional consecutive classes required to reach 75%.
+- Calculate additional consecutive classes required to reach 75%.
 
 ### 5. CGPA Calculator
-- Add subjects with their respective credits and grade points.
+- Add subjects with credits and grade points.
 - Calculate Semester Grade Point Average (SGPA).
 - Calculate cumulative CGPA using previous semester SGPA and credits.
 - Update and delete subject records.
 
 ### 6. Student Profile
 - Store student information.
-- Maintain name, roll number, department, program, academic year, section, and email address.
+- Maintain name, roll number, department, program, academic year, section and email address.
 - Update profile details through the graphical interface.
 
 ---
@@ -59,7 +58,6 @@ The application features a modern dark-themed graphical user interface designed 
 | ttk | GUI widgets and tables |
 | Python OOP | Modular application design |
 | Lists and Dictionaries | Runtime data management |
-| Canvas / Tkinter Widgets | GUI components and visual elements |
 
 ---
 
@@ -67,16 +65,13 @@ The application features a modern dark-themed graphical user interface designed 
 
 ```text
 CampusCompanion/
-│
 ├── main.py
 ├── app.py
 ├── README.md
-│
 ├── ui/
 │   ├── __init__.py
 │   ├── theme.py
 │   └── components.py
-│
 ├── pages/
 │   ├── __init__.py
 │   ├── dashboard.py
@@ -86,14 +81,12 @@ CampusCompanion/
 │   ├── cgpa.py
 │   ├── profile.py
 │   └── placeholder.py
-│
 ├── logic/
 │   ├── __init__.py
 │   ├── timetable_logic.py
 │   ├── task_logic.py
 │   ├── attendance_logic.py
 │   └── cgpa_logic.py
-│
 └── assets/
 ```
 
@@ -103,19 +96,19 @@ CampusCompanion/
 
 ### Prerequisites
 - Python 3.10 or later
-- Visual Studio Code or any Python-supported IDE
-- Windows, Linux, or macOS with Tkinter support
+- Visual Studio Code or another Python-supported IDE
+- Tkinter support
 
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/saiprakashs2007/Campus-Companion.git
 ```
 
 ### Step 2: Navigate to the Project Folder
 
 ```bash
-cd CampusCompanion
+cd Campus-Companion
 ```
 
 ### Step 3: Run the Application
@@ -130,10 +123,10 @@ The Campus Companion desktop application will launch.
 
 ## 🧠 Application Architecture
 
-The project follows a modular architecture that separates the graphical interface from the application logic.
+The project follows a modular architecture that separates the graphical interface from application logic.
 
 - **main.py:** Application entry point.
-- **app.py:** Handles the main window, sidebar navigation, and integration of modules.
+- **app.py:** Handles the main window, sidebar navigation and integration of modules.
 - **ui/:** Contains reusable interface components and theme configurations.
 - **pages/:** Contains the graphical interfaces for individual modules.
 - **logic/:** Contains the core operations and calculations for each module.
@@ -145,8 +138,6 @@ Shared manager objects allow data to remain accessible across different pages wh
 ## 📊 Key Calculations
 
 ### Attendance Percentage
-
-Attendance is calculated using:
 
 \[
 Attendance = \frac{Attended\ Classes}{Total\ Classes}\times100
@@ -161,8 +152,6 @@ SGPA = \frac{\sum(Credit \times Grade\ Point)}{\sum Credits}
 \]
 
 ### Cumulative Grade Point Average (CGPA)
-
-CGPA is calculated using the weighted average of semester SGPA values and their corresponding total credits.
 
 \[
 CGPA = \frac{\sum(SGPA \times Semester\ Credits)}{\sum Semester\ Credits}
@@ -204,7 +193,7 @@ CGPA = \frac{\sum(SGPA \times Semester\ Credits)}{\sum Semester\ Credits}
 
 The primary objective of Campus Companion is to develop a simple, user-friendly academic management application that brings essential student productivity tools together in one place.
 
-By combining timetable management, task organization, attendance monitoring, academic performance calculation, and student profile management, the project aims to improve students' academic organization and productivity.
+By combining timetable management, task organization, attendance monitoring, academic performance calculation and student profile management, the project aims to improve students' academic organization and productivity.
 
 ---
 
